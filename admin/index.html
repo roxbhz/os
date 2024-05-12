@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <link rel="preconnect" href="http://" https://fonts.googleapis.com">
+    <link rel="preconnect" href="http://" https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <title>ADMINISTRATIVO</title> 
+</head>
+
+<body>
+
+    <div class="leftMenu">
+        <img src="../admin/eu.jfif" width="99px" height="99px" style="border-radius: 180px;">
+
+        <label id="userName">Thiago Moreira</label>
+        <div class="menuItem">
+            <img src="img/home.png" width="30px" height="30px"> <a href="#"
+                style="padding-left: 10px; font-size: 20px;">Home</a>
+        </div>
+        <div class="menuItem">
+            <img src="img/clientes.png" width="30px" height="30px"> <a href="#"
+                style="padding-left: 10px; font-size: 20px;">Clientes</a>
+        </div>
+        <div class="menuItem">
+            <img src="img/os.png" width="30px" height="30px"> <a href="#"
+                style="padding-left: 10px; font-size: 20px;">Ordens</a>
+        </div>
+        <div class="menuItem">
+            <img src="img/tecnicos.png" width="30px" height="30px"> <a href="#"
+                style="padding-left: 10px; font-size: 20px;">Técnicos</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="contentSite">
+        <div class="topBar">
+            <label style="font-size: 25px; color: var(--blue--);">Profile de Usuário</label>
+            <label id="dateTime" style="color: var(--blue--);">08 de Maio de 2024</label>
+        </div>
+        <div class="infos">
+            <div class="tecInfos" style="width: 500px; display: flex; flex-direction: row; padding: 10px;">
+                <img src="../admin/eu.jfif" width="170px" height="170px"
+                    style="border-radius: 180px; margin-right: 15px;">
+                <div class="dadosTecn">
+                    <div class="name">
+                        <label id="userName" style="color: var(--blue--); font-size: 20px;">Thiago
+                            Moreira
+                        </label>
+                        <label id="status"
+                            style="
+                            background-image: linear-gradient(to right, rgb(40, 193, 231), rgb(32, 205, 218));; color: white; font-weight: bold; padding: 3px 5px; border-radius: 5px; margin-left: 10px;">
+                            ATIVO </label>
+                        <br>
+                        <div style="display: flex; justify-content: space-between; width: 300px; padding-top: 10px;">
+                            <div>
+                                <label class="tecInfoName">Cargo:</label><br>
+                                <label id="tecDataCargo">Técnico/Diretor</label>
+                            </div>
+                            </label>
+                            <div style="width: 45%;">
+                                <label class="tecInfoName">Setor:</label><br>
+                                <label id="tecDataSetor">Operacional</label>
+                            </div>
+                        </div>
+
+                        <br>
+                        <label class="tecInfoName">Email:</label>
+                        <label id="tecDataEmail">contato@roxbhz.com</label>
+                        <br>
+                        <label class="tecInfoName">Telefone:</label>
+                        <label id="tecDataFone">(31) 9999-9999)</label>
+                        <br>
+                        <label class="tecInfoName">Empresa:</label>
+                        <label id="tecDataEmpresa">RZ Tecnologia</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tecInfos" style="width: 500px; padding: 10px;">
+                <div class="name">
+                    <label id="userName" style="color: var(--blue--); font-size: 20px;">Minhas OS
+                    </label>
+                    <button id="btnAbrirOs"
+                        style="background: red; margin-left: 35px; border: none; padding: 5px 25px; border-radius: 5px; font-weight: bold; color: white;">
+                        Abrir nova OS </button>
+                    <br>
+                    <div style="display: flex; justify-content: space-between; width: 300px; padding-top: 10px;">
+                        <div>
+                            <label class="tecInfoName">Ordens Totais:</label><br>
+                            <label id="tecDataCargo">48</label>
+                        </div>
+                        </label>
+                        <div style="width: 45%;">
+                            <label class="tecInfoName">Desligamento:</label><br>
+                            <label id="tecDataSetor">Em Atividade</label>
+                        </div>
+                    </div>
+                    <br>
+                    <label class="tecInfoName">Abertas:</label>
+                    <label id="tecDataEmail">15</label>
+                    <br>
+                    <label class="tecInfoName">Em orçamento:</label>
+                    <label id="tecDataFone">6</label>
+                    <br>
+                    <label class="tecInfoName">Aguardando Autorização:</label>
+                    <label id="tecDataEmpresa">4</label>
+                    <br>
+                    <label class="tecInfoName">Finalizadas:</label>
+                    <label id="tecDataEmpresa">15</label>
+                    <br>
+                    <label class="tecInfoName">Canceladas:</label>
+                    <label id="tecDataEmpresa">8</label>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="searchOs">
+            <input id="InputsearchOs" type="text" placeholder="Insira o nº da OS ou nome do cliente"
+                style="width: 230px; margin: 30px 5px 30px 30px; border-radius: 5px; border: none; padding: 5px 15px;">
+            <button class="btnSearchOs"
+                style="background: rgb(108, 115, 180); border: none; border-radius: 5px; padding: 5px 15px; color: white;">Pesquisar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número da OS</th>
+                    <th>Cliente</th>
+                    <th>Técnico</th>
+                    <th>Status</th>
+                    <th>Entrada</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>002</td>
+                    <td>Thiago Moreira dos Santos</td>
+                    <td>Gordinho da Microsoft</td>
+                    <td>Em Andamento</td>
+                    <td>01/05/2024</td>
+                    <td><button>
+                            <img src="img/editar.png" width="20px" height="20px">
+                        </button>
+                        <button><img src="img/fechar.png" width="20px" height="20px">
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>004</td>
+                    <td>Pedro da Lara</td>
+                    <td>Carzalbé</td>
+                    <td>Orçamento</td>
+                    <td>05/05/2024</td>
+                    <td><button>
+                            <img src="img/editar.png" width="20px" height="20px">
+                        </button>
+                        <button><img src="img/fechar.png" width="20px" height="20px">
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

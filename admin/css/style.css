@@ -1,0 +1,131 @@
+:root {
+    --BG--: rgba(88, 88, 216, 0.192);
+    --blue--: rgb(43, 92, 226);
+    --darkBlue--: rgb(17, 46, 126);
+    --borderDarkBlue--: rgba(17, 46, 126, 0.678);
+    --red--: red;
+    --green--: #04AA6D;
+    --white--: white;
+    --active--: aqua;
+    --tecColor--: rgb(134, 126, 126);
+    --tecColor2--: rgb(66, 66, 66);
+
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--BG--);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background: var(--BG--);
+}
+
+.leftMenu {
+    height: 100vh;
+    width: 250px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.541);
+    background-image: linear-gradient(to bottom, var(--blue--), var(--BG--));
+}
+
+#userName {
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.menuItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-bottom: 25px;
+}
+
+.contentSite {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.topBar {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 30px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+}
+
+.tecInfos {
+    background: white;
+    width: 100px;
+    min-height: 150px;
+    margin: 0px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.tecInfoName {
+    color: var(--tecColor--);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#tecDataCargo,
+#tecDataSetor,
+#tecDataEmail,
+#tecDataFone,
+#tecDataEmpresa {
+    color: var(--tecColor2--);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#InputsearchOs:hover {
+    outline: none;
+}
+
+
+
+
+
+table {
+    margin: 0px 0px 0px 30px;
+    width: auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+th {
+    background: #f2f2f2;
+    color: var(--blue--);
+}
+
+tr:nth-child(odd) {
+    background: #f9f9f9;
+}
