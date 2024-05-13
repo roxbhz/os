@@ -41,6 +41,10 @@
     <div class="contentSite">
         <div class="topBar">
             <label style="font-size: 25px; color: var(--blue--);">Profile de Usuário</label>
+             
+
+            <div id="overlay" class="overlay"></div>
+             
             <label id="dateTime" style="color: var(--blue--);">08 de Maio de 2024</label>
         </div>
         <div class="infos">
@@ -86,9 +90,12 @@
                 <div class="name">
                     <label id="userName" style="color: var(--blue--); font-size: 20px;">Minhas OS
                     </label>
-                    <button id="btnAbrirOs"
-                        style="background: red; margin-left: 35px; border: none; padding: 5px 25px; border-radius: 5px; font-weight: bold; color: white;">
-                        Abrir nova OS </button>
+
+                    <button onclick="openPopup()" style="background: red; margin-left: 35px; border: none; padding: 5px 25px; border-radius: 5px; font-weight: bold; color: white;">Abrir nova OS</button>
+            
+
+
+   
                     <br>
                     <div style="display: flex; justify-content: space-between; width: 300px; padding-top: 10px;">
                         <div>
@@ -171,6 +178,19 @@
             </tbody>
         </table>
     </div>
+
+                    <!-- Pop-up -->
+                    <div id="popup" class="popup">
+                        <h2>Adicionar nova OS</h2>
+                        <div class="novaOs" style="width: 400px; padding: 35px 40px;">
+                            <input style="border: 1px #f3f3f3 solid">
+
+
+                        </div>
+                        <button onclick="closePopup()" style="background:var(--blue--); border: none; border-radius: 5px; padding: 5px 10px; color: white">Fechar</button>
+                        </>
+                         
+                            <!-- Fundo do pop-up -->
 </body>
 
 </html>
